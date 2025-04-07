@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .custom-header, .custom-footer {
+    background-color: #000000;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -10px;
+  }
+  .col {
+    flex: 1;
+    padding: 10px;
+  }
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .paragraph {
+    text-align: justify;
+  }
+  .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .custom-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #3e3e3e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  .btn:hover {
+    background-color: #1e1e1e;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  table, th, td {
+    border: 2px solid #000; 
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  .table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .highlight {
+    color: red;
+  }
