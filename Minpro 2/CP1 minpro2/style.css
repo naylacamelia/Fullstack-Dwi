@@ -1,0 +1,100 @@
+/* Menambahkan beberapa perubahan untuk memastikan navbar tidak terpotong */
+body {
+  padding-top: 100px;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 1000;
+  box-sizing: border-box; /* Pastikan elemen ini tidak meluas melebihi batas */
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* Untuk memastikan navbar tetap responsif pada layar kecil */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar-links a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text-box {
+  flex: 1 1 50%;
+  min-width: 280px;
+}
+
+.image-box {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.custom-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
